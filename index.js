@@ -58,3 +58,20 @@ function sendEmail() {
         message => alert(message)
     );
 }
+
+// BACK-TO-TOP
+
+window.addEventListener("scroll", function() {
+    var backToTopButton = document.querySelector(".back-to-top-button");
+    console.log(backToTopButton);
+    if(window.pageYOffset > 300) {
+        backToTopButton.style.display = "block";
+    }
+    else {
+        backToTopButton.style.display = "none";
+    }
+})
+
+document.querySelector(".back-to-top-button").addEventListener("click", function () {
+    window.scrollTo({top: 0, behavior: "smooth"});
+})
