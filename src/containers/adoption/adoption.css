@@ -1,0 +1,53 @@
+.airlipay__adoption {
+    display: flex;
+    flex-direction: row;
+    background: var(--color-2);
+    color: white;
+    font-family: var(--font-family);
+}
+
+.airlipay__adoption-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.airlipay__adoption-content {
+    flex: 1;
+    padding-left: 2rem;
+}
+
+.airlipay__adoption-image img {
+    width: 500px;
+    height: 500px;
+}
+
+.airlipay__adoption-content h2 {
+    padding: 5rem 0 3rem;
+}
+
+.airlipay__adoption-content p {
+    padding-right: 6rem;
+}
+
+@media screen and (max-width: 900px) {
+    .airlipay__adoption {
+        flex-direction: column;
+    }
+
+    .airlipay__adoption-content p {
+        padding-right: 0;
+    }
+
+    .airlipay__adoption-content {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .airlipay__adoption-image img {
+        width: 350px;
+        height: 350px;
+    }
+}

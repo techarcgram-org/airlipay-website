@@ -1,0 +1,99 @@
+.airlipay__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: .5rem 6rem;
+    background: var(--color-1);
+    color: white;
+}
+
+.airlipay__navbar h1 {
+    font-family: var(--font-family);
+    font-size: 38px;
+    line-height: 45px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.airlipay__navbar-links {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 4rem;
+}
+
+.airlipay__navbar-links p {
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 25px;
+    font-weight: 350;
+}
+
+.airlipay__navbar-links button {
+    padding: .3rem 0.5rem;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+
+    font-family: var(--font-family);
+    font-size: 15px;
+    background: var(--color-3);
+    cursor: pointer;
+    transition: 0.3s background-color;
+}
+
+.airlipay__navbar-links button:hover {
+    background-color: #FBC901;
+    box-shadow: 0 0 10px #FBC901;
+}
+
+@media screen and (max-width: 800px) {
+    .airlipay__navbar {
+        padding: 0.5rem 4rem;
+    }
+
+    .airlipay__navbar-links {
+        gap: 2rem;
+    }
+
+    .airlipay__navbar h1 {
+        font-size: 34px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .airlipay__navbar {
+        padding: 0.5rem 3rem;
+    }
+
+    .airlipay__navbar-links {
+        gap: 1rem;
+    }
+
+    .airlipay__navbar h1 {
+        font-size: 30px;
+        line-height: 35px;
+    }
+
+    .airlipay__navbar-links p {
+        font-size: 15px;
+        line-height: 17px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .airlipay__navbar {
+        padding: 0.5rem 2rem;
+    }
+
+    .airlipay__navbar-links {
+        gap: 1rem;
+    }
+
+    .airlipay__navbar h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+}

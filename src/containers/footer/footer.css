@@ -1,0 +1,109 @@
+.airlipay__footer {
+    background: var(--color-2);
+    display: flex; 
+    flex-direction: column;
+}
+
+.airlipay__footer-bottom  {
+    background: var(--color-4);
+}
+
+.airlipay__footer-top {
+    display: flex;
+    gap: 5rem;
+    font-family: var(--font-family);
+    color: white;
+}
+
+.airlipay__footer-content h2 {
+    font-size: 2.2rem;
+    line-height: 1.3; 
+    font-weight: 200;
+}
+
+.airlipay__footer-content h2,
+.airlipay__footer-content p {
+    margin-bottom: 1rem;
+}
+
+.airlipay__footer-content,
+.airlipay__footer-form {
+    flex: 1;
+}
+
+.airlipay__footer-icons {
+    display: flex;
+    justify-content: flex-start;
+    gap: .4rem;
+}
+
+.airlipay__footer-form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+}
+
+.airlipay__footer-form form input,
+.airlipay__footer-form form textarea {
+    padding: .7rem;
+    border: 1px solid var(--color-1);
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    background: #7fa3ff;
+    color: white;
+    font-size: .9rem;
+    width: 100%;
+}
+
+.airlipay__footer-form form input::placeholder,
+.airlipay__footer-form form textarea::placeholder {
+    color: rgba(255, 255, 255, .6);
+    font-family: var(--font-family);
+    font-size: .9rem;
+}
+
+.airlipay__footer-form input[type='submit'] {
+    width: 150px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3 ease;
+}
+
+.airlipay__footer-form input[type='submit']:hover {
+    background: var(--color-1);
+}
+
+.airlipay__footer-icons .icon:hover {
+    color: var(--color-4);
+} 
+
+.airlipay__footer-bottom {
+    padding: 1rem 6rem;
+    color: white;
+}
+
+.airlipay__footer-bottom span{
+    font-size: 1.5rem;
+}
+
+.airlipay__footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px) {
+    .airlipay__footer-top {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .airlipay__footer-bottom {
+        padding: 1rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .airlipay__footer-bottom {
+        padding: 1rem 2rem;
+    }
+}

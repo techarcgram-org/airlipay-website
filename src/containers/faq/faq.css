@@ -1,0 +1,50 @@
+.airlipay__faq {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    font-family: var(--font-family);
+    background: var(--color-5);
+}
+
+.airlipay__faq-content {
+    flex: 1;
+}
+
+.airlipay__faq-content h2 {
+    margin-bottom: 3rem;
+}
+
+.airlipay__faq-content p {
+    line-height: 1.7;
+    font-size: 1.3rem;
+}
+
+.ailipay__faq-container {
+    flex: 1;
+}
+
+.airlipay__faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    margin: 2.5rem 0;
+    cursor: pointer;
+}
+
+.airlipay__faq-question h3 {
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+@media screen and (max-width: 900px) {
+    .airlipay__faq {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .airlipay__faq-question h3 {
+        font-size: 1rem;
+    }
+}
