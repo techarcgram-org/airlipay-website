@@ -4,12 +4,6 @@ import rulesImg from '../../assets/Screen_Shot_2023-05-13_at_23.42.04-removebg-p
 
 const Rules = () => {
 
-    const handleClick = () => {
-        console.log('clicked');
-        // const element = document.getElementById('contact');
-        // element.scrollIntoView({behabior: 'smooth'});
-    };
-
    return (
        <div className='airlipay__rules section__padding'>
            <div className='airlipay__rules-image'>
