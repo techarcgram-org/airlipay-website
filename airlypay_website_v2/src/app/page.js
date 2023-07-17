@@ -1,9 +1,13 @@
 import Image from 'next/image'
+import {Introduction,Rules} from '@/components'
 
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1>I want to be paid airly </h1> 
+      <div id='container' >
+        <Introduction/>
+        <Rules/>
+      </div> 
     </main>
   )
 }
