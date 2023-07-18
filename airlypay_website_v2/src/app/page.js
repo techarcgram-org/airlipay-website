@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import {FAQ, Introduction,Rules,Statistics} from '@/components'
+import {Benefits, Contact, Dedication, FAQ, Footer, Introduction,Rules,Statistics} from '@/components'
 
 export default function Home() {
   return (
@@ -9,6 +9,10 @@ export default function Home() {
         <Rules/>
         <Statistics/>
         <FAQ/>
+        <Dedication/>
+        <Benefits/>
+        <Contact/>
+        <Footer/>
       </div> 
     </main>
   )
