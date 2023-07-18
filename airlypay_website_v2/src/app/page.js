@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import {Introduction,Rules} from '@/components'
+import {FAQ, Introduction,Rules,Statistics} from '@/components'
 
 export default function Home() {
   return (
@@ -7,6 +7,8 @@ export default function Home() {
       <div id='container' >
         <Introduction/>
         <Rules/>
+        <Statistics/>
+        <FAQ/>
       </div> 
     </main>
   )
