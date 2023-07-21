@@ -1,5 +1,5 @@
-
-import React from 'react'
+import React from "react";
+import { StatisticsCard } from ".";
 
 const Statistics = () => {
   return (
@@ -13,38 +13,30 @@ const Statistics = () => {
           </p>
         </div>
         <div class="stats-container">
-          <div class="stats-detail">
-            <h3>95%</h3>
-            <p class="description">
-              of on-demand pay users stopped using payday loans (81%) or reduce
-              use (15%) after access to on-demand pay.{" "}
-            </p>
-          </div>
-          <div class="stats-detail">
-            <h3>88%</h3>
-            <p class="description">
-              of users credit on-demand pay for reducing or eliminating their
-              use of payday loans
-            </p>
-          </div>
-          <div class="stats-detail">
-            <h3>$624 - $930</h3>
-            <p class="description">
-              Conservative estimate of amount frequent payday users save
-              annually using on-demand pay.{" "}
-            </p>
-          </div>
-          <div class="stats-detail">
-            <h3>$361</h3>
-            <p class="description">
-              An average of $361 is saved annually across the entire spectrum of
-              payday borrowers.{" "}
-            </p>
-          </div>
+          <StatisticsCard
+            title="95%"
+            subtitle="of on-demand pay users stopped using payday loans (81%) or reduce
+              use (15%) after access to on-demand pay"
+          />
+          <StatisticsCard
+            title="88%"
+            subtitle="of users credit on-demand pay for reducing or eliminating their
+              use of payday loans"
+          />
+          <StatisticsCard
+            title="$624 - $930"
+            subtitle="Conservative estimate of amount frequent payday users save
+              annually using on-demand pay"
+          />
+          <StatisticsCard
+            title="$361"
+            subtitle="An average of $361 is saved annually across the entire spectrum of
+              payday borrowers"
+          />
         </div>
       </div>
     </section>
   );
-}
+};
 
-export default Statistics
+export default Statistics;
