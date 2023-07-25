@@ -1,4 +1,5 @@
 'use client'
+import dynamic from "next/dynamic";
 import React, { useState } from "react";
 
 const Contact = () => {
@@ -83,4 +84,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default dynamic(() => Promise.resolve(Contact), { ssr: false });

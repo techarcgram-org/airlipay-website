@@ -1,5 +1,6 @@
 import Image from "next/image";
 import screen2 from "../app/assets/images/screen2.png";
+import dynamic from "next/dynamic";
 
 const Rules = () => {
   return (
@@ -37,4 +38,4 @@ const Rules = () => {
   );
 };
 
-export default Rules;
+export default dynamic(() => Promise.resolve(Rules), { ssr: false });

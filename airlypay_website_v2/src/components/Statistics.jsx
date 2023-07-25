@@ -1,4 +1,5 @@
 
+import dynamic from 'next/dynamic';
 import React from 'react'
 
 const Statistics = () => {
@@ -47,4 +48,4 @@ const Statistics = () => {
   );
 }
 
-export default Statistics
+export default dynamic(() => Promise.resolve(Statistics), { ssr: false });

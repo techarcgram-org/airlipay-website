@@ -1,5 +1,6 @@
 'use client'
 
+import dynamic from "next/dynamic";
 import React, { useState } from "react";
 
 const FAQ = () => {
@@ -84,4 +85,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default dynamic(() => Promise.resolve(FAQ), { ssr: false });
