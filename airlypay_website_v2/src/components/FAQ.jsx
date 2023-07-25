@@ -71,11 +71,9 @@ const FAQ = () => {
                 </svg>
               </div>
               <div
-                className={`accordion-content ${
-                  activeAccordion === index ? "active" : ""
-                }`}
+                className='accordion-content'
               >
-                <p>{item.content}</p>
+                {activeAccordion === index ? <p>{item.content}</p> : '' }
               </div>
             </div>
           ))}
