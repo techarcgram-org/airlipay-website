@@ -8,7 +8,11 @@ const Footer = () => {
           <p>
             <span class="higher">A</span>irlipay ⓒ{" "}
             <span class="current-year "></span> |{" "}
-            <a href="https://techarcgram.com/">
+            <a
+              href="https://techarcgram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <span class="higher">T</span>echarcgram
             </a>
           </p>
