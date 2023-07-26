@@ -170,6 +170,7 @@ a {
   font-size: 1.2rem;
   line-height: 1.6;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  margin-top: 2rem;
 }
 
 .features {
@@ -178,6 +179,7 @@ a {
   width: 80%;
   display: flex;
   justify-content: space-around;
+  /* margin-bottom: 4rem; */
 }
 
 .feature {
@@ -235,6 +237,9 @@ a {
 #rules {
   background-color: var(--fifth);
   width: 100%;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
 }
 
 .rules-content {
@@ -291,9 +296,17 @@ a {
   background-color: var(--primary);
 }
 
+@media (max-width: 1024px) {
+  .rules-content{
+    left: 8%;
+  }
+}
+
 @media (max-width: 600px) {
   .rules-content {
     display: block;
+    position: relative;
+    left: 12%;
   }
 
   .rules-heading {
@@ -302,7 +315,7 @@ a {
 
   .img-container,
   .rules-text {
-    width: 100%;
+    width: 70%;
     text-align: center;
     padding: 0;
   }
@@ -353,6 +366,7 @@ section[id="stats"] {
 .stats-detail h3 {
   font-size: 1.5rem;
   font-weight: 800;
+  margin-top: 1rem;
 }
 
 @media (max-width: 600px) {
@@ -410,6 +424,10 @@ section[id="stats"] {
   border-bottom: 1px solid #ccc;
 }
 
+.accordion-item {
+  margin-bottom: 12px;
+}
+
 .accordion-content p {
   line-height: 1.5;
   font-size: 1rem;
@@ -433,7 +451,7 @@ section[id="stats"] {
 }
 
 .accordion-content {
-  display: none;
+  display: block;
   padding: 10px;
 }
 
@@ -577,12 +595,14 @@ section[id="stats"] {
   font-weight: 500;
   line-height: 1.2;
   text-transform: capitalize;
+  margin: 2rem auto;
 }
 
 .contact-desc,
 .detail p {
   font-size: 1.1rem;
   line-height: 1.5;
+  margin: 1rem auto;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
 

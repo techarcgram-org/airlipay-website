@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import frame from "../../src/app/assets/images/Frame 76.png";
+import dynamic from "next/dynamic";
 
 const Dedication = () => {
   return (
@@ -28,4 +29,4 @@ const Dedication = () => {
   );
 };
 
-export default Dedication;
+export default dynamic(() => Promise.resolve(Dedication), { ssr: false });

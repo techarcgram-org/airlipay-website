@@ -1,4 +1,5 @@
 
+import dynamic from 'next/dynamic';
 import Link from 'next/link';
 
 const Header = () => {
@@ -14,17 +15,17 @@ const Header = () => {
           <nav>
             <ul id="nav-bar">
               <li>
-                <Link href="#faq">
+                <Link href="#faq" suppressHydrationWarning={true}>
                   FAQ
                 </Link>
               </li>
               <li>
-                <Link href="#benefits">
+                <Link href="#benefits" suppressHydrationWarning={true}>
                   Benefits
                 </Link>
               </li>
               <li>
-                <Link href="#contact">
+                <Link href="#contact" suppressHydrationWarning={true}>
                   Contact Us
                 </Link>
               </li>
@@ -37,4 +38,4 @@ const Header = () => {
   );
 }
 
-export default Header;
+export default dynamic(() => Promise.resolve(Header), { ssr: false });

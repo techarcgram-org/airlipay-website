@@ -1,4 +1,5 @@
 import React from "react";
+import dynamic from "next/dynamic";
 
 const Benefits = () => {
   return (
@@ -91,4 +92,5 @@ const Benefits = () => {
   );
 };
 
-export default Benefits;
+export default dynamic(() => Promise.resolve(Benefits),{ssr:false});
+

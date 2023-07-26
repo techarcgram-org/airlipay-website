@@ -1,5 +1,6 @@
 import Image from "next/image";
 import screen1 from '../app/assets/images/screen1.png'
+import dynamic from "next/dynamic";
 
 const Introduction = () => {
   return (
@@ -68,4 +69,4 @@ const Introduction = () => {
   );
 };
 
-export default Introduction;
+export default dynamic(() => Promise.resolve(Introduction), { ssr: false });
