@@ -1,6 +1,6 @@
-
-import dynamic from 'next/dynamic';
-import Link from 'next/link';
+"use client";
+import dynamic from "next/dynamic";
+import Link from "next-intl/link";
 
 const Header = () => {
   return (
@@ -29,6 +29,15 @@ const Header = () => {
                   Contact Us
                 </Link>
               </li>
+              <li>
+                <Link href="/" locale="en">
+                  en
+                </Link>
+                |
+                <Link href="/" locale="fr">
+                  fr
+                </Link>
+              </li>
             </ul>
           </nav>
           <button id="get-app">Get App</button>
@@ -36,6 +45,6 @@ const Header = () => {
       </div>
     </header>
   );
-}
+};
 
 export default dynamic(() => Promise.resolve(Header), { ssr: false });
