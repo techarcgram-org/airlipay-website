@@ -1,6 +1,7 @@
 import images from "@/constant/images";
 import React from "react";
 import { BenefitCard } from ".";
+import dynamic from "next/dynamic";
 
 const Benefits = () => {
   return (
@@ -65,4 +66,5 @@ const Benefits = () => {
   );
 };
 
-export default Benefits;
+export default dynamic(() => Promise.resolve(Benefits),{ssr:false});
+

@@ -1,14 +1,21 @@
+"use client";
+
 import Image from "next/image";
-import screen1 from '../app/assets/images/screen1.png'
+import screen1 from "../app/assets/images/screen1.png";
+import dynamic from "next/dynamic";
+import { useTranslations } from "next-intl";
 
 const Introduction = () => {
+  const t = useTranslations("Home");
+
   return (
     <section id="introduction">
       <div className="intro-content">
         <div className="intro-text">
-          <h1 className="heading">
-            Get paid on your terms. <br /> Instant wage access made simple
-          </h1>
+          <h1
+            className="heading"
+            dangerouslySetInnerHTML={{ __html: t.raw("title") }}
+          ></h1>
           <p className="intro-description description">
             On-demand pay — also known as earned wage access — gives employees
             access to their earned pay before the traditional, scheduled payday.
@@ -68,4 +75,4 @@ const Introduction = () => {
   );
 };
 
-export default Introduction;
+export default dynamic(() => Promise.resolve(Introduction), { ssr: false });

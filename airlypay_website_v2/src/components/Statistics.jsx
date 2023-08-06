@@ -1,5 +1,7 @@
 import React from "react";
-import { StatisticsCard } from ".";
+import { StatisticsCard } from "../index";
+
+import dynamic from 'next/dynamic';
 
 const Statistics = () => {
   return (
@@ -40,3 +42,4 @@ const Statistics = () => {
 };
 
 export default Statistics;
+export default dynamic(() => Promise.resolve(Statistics), { ssr: false });

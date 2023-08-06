@@ -1,5 +1,6 @@
 'use client'
 
+import dynamic from "next/dynamic";
 import React, { useState } from "react";
 
 const FAQ = () => {
@@ -70,11 +71,9 @@ const FAQ = () => {
                 </svg>
               </div>
               <div
-                className={`accordion-content ${
-                  activeAccordion === index ? "active" : ""
-                }`}
+                className='accordion-content'
               >
-                <p>{item.content}</p>
+                {activeAccordion === index ? <p>{item.content}</p> : '' }
               </div>
             </div>
           ))}
@@ -84,4 +83,4 @@ const FAQ = () => {
   );
 };
 
-export default FAQ;
+export default dynamic(() => Promise.resolve(FAQ), { ssr: false });
